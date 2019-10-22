@@ -5,18 +5,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 
-<script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
-</script>
-<script>
-$(function(){
-  $("#header").load("header.html");
-  $("#footer").load("footer.html");
-});
-</script>
-
 <html>
 	<head>
 		<title>The diary of a pickup artist</title>
@@ -27,37 +15,42 @@ $(function(){
 	</head>
 	<body class="is-preload">
 
-		<!--Get the header from the external file-->
-		<div id="header"></div>
+		<!--header-->
+		<div id="header">
+      <a href="index.html" class="title">Catch The Hole</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </div>
 
-		<div id="wrapper">
-			<!-- Main -->
-			<section id="main" class="wrapper">
-				<div class="inner">
-					<h1 class="major">The diary of a pick up artist</h1>
-				</div>
-			</section>
-		</div>
-
-		<section id="insert" class="wrapper style1 fade-up">
+		<!-- Main -->
+		<section id="main" class="wrapper">
 			<div class="inner">
+				<h1 class="major">The diary of a pick up artist</h1>
+			</div>
+		</section>
+
+		<section id="insert" class="wrapper fade-up">
+			<div class="inner fade-up">
 				<h2>Inserisci una fantastica frase</h2>
 				<p>Frase per modo di dire infatti fuoi scrivere potenzialmente quanto vuoi, ma falla breve alla gente non piace perdere troppo tempo a leggere.</p>
 				<div class="style1">
 					<section>
 						<form method="post" action="#">
 							<div class="fields">
-								<div class="field half">
-									<label for="name">Title</label>
-									<input type="text" name="name" id="name" />
+								<div class="field">
+									<label for="title">Title</label>
+									<input type="text" name="titletitle" id="title" />
 								</div>
 								<div class="field">
-									<label for="message">Content</label>
-									<textarea name="message" id="message" rows="5"></textarea>
+									<label for="content">Content</label>
+									<textarea name="content" id="content" rows="5"></textarea>
 								</div>
 							</div>
 							<ul class="actions">
-								<li><a href="" class="button submit">Post</a></li>
+								<li><a href="" onClick="setPost()" class="button submit">Post</a></li>
 							</ul>
 						</form>
 					</section>
@@ -67,19 +60,21 @@ $(function(){
 
 		<!-- Wrapper -->
 		<div id="wrapper">
-
-			<!-- Main -->
 				<section id="main" class="wrapper">
 					<div class="inner">
 						<div id="posts"></div>
-						<script src="script.js"></script>
 					</div>
 				</section>
-
 		</div>
 
-			<!--Get the footer from the external file-->
-			<div id="footer" class="wrapper alt"></div>
+			<!--footer-->
+			<div id="footer" class="wrapper alt">
+        <div class="inner">
+          <ul class="menu">
+            <li>&copy; Catch The Hole. All rights reserved.</li>
+          </ul>
+        </div>
+      </div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -89,6 +84,7 @@ $(function(){
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+      <script src="script.js"></script>
 
 	</body>
 </html>
