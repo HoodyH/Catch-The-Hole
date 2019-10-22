@@ -30,18 +30,53 @@ $(function(){
 		<!--Get the header from the external file-->
 		<div id="header"></div>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
+			<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<h1 class="major">The diary of a pick up artist</h1>
+				</div>
+			</section>
+		</div>
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">The diary of a pickup artist</h1>
-							<p>In costruzione.</p>
-						</div>
+		<section id="insert" class="wrapper style1 fade-up">
+			<div class="inner">
+				<h2>Inserisci una fantastica frase</h2>
+				<p>Frase per modo di dire infatti fuoi scrivere potenzialmente quanto vuoi, ma falla breve alla gente non piace perdere troppo tempo a leggere.</p>
+				<div class="style1">
+					<section>
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field half">
+									<label for="name">Title</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field">
+									<label for="message">Content</label>
+									<textarea name="message" id="message" rows="5"></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><a href="" class="button submit">Post</a></li>
+							</ul>
+						</form>
 					</section>
-
+				</div>
 			</div>
+		</section>
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Main -->
+				<section id="main" class="wrapper">
+					<div class="inner">
+						<div id="posts"></div>
+						<script src="script.js"></script>
+					</div>
+				</section>
+
+		</div>
 
 			<!--Get the footer from the external file-->
 			<div id="footer" class="wrapper alt"></div>
